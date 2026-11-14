@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #2c2420;
+  background: #fdfbf7;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  font-family: Outfit, system-ui, sans-serif;
+}
+
+.display {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.petal-bg {
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(228, 180, 176, 0.28), transparent 32%),
+    radial-gradient(circle at 88% 8%, rgba(143, 163, 138, 0.16), transparent 28%),
+    radial-gradient(circle at 70% 80%, rgba(226, 209, 184, 0.35), transparent 40%);
+}
+
+input,
+select,
+textarea {
+  @apply w-full rounded-2xl border border-blush-200/80 bg-white/80 px-4 py-3 text-sm outline-none transition focus:border-sage-400 focus:ring-2 focus:ring-sage-100;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium tracking-wide transition;
+}
+
+.btn-dark {
+  @apply btn bg-ink text-cream-50 hover:bg-sage-700;
+}
+
+.btn-line {
+  @apply btn border border-ink/15 bg-white/70 hover:border-ink/40;
+}
+
+.card {
+  @apply overflow-hidden rounded-[1.6rem] bg-white/80 shadow-soft ring-1 ring-blush-200/50;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e4b4b0;
+  border-radius: 99px;
+}
